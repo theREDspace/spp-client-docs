@@ -1,0 +1,2014 @@
+<!doctype html>
+<html class="default" lang="en" data-base="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Timesheet | @theredspace/spp-client</title>
+    <meta
+      name="description"
+      content="Documentation for @theredspace/spp-client"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/highlight.css" />
+    <script defer src="../assets/main.js"></script>
+    <script async src="../assets/icons.js" id="tsd-icons-script"></script>
+    <script async src="../assets/search.js" id="tsd-search-script"></script>
+    <script async src="../assets/navigation.js" id="tsd-nav-script"></script>
+    <script
+      async
+      src="../assets/hierarchy.js"
+      id="tsd-hierarchy-script"
+    ></script>
+  </head>
+  <body>
+    <script>
+      document.documentElement.dataset.theme =
+        localStorage.getItem("tsd-theme") || "os";
+      document.body.style.display = "none";
+      setTimeout(
+        () =>
+          window.app
+            ? app.showPage()
+            : document.body.style.removeProperty("display"),
+        500,
+      );
+    </script>
+    <header class="tsd-page-toolbar">
+      <div class="tsd-toolbar-contents container">
+        <a href="../index.html" class="title">@theredspace/spp-client</a>
+        <div id="tsd-toolbar-links"></div>
+        <button id="tsd-search-trigger" class="tsd-widget" aria-label="Search">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            aria-hidden="true"
+          >
+            <use href="../assets/icons.svg#icon-search"></use>
+          </svg>
+        </button>
+        <dialog id="tsd-search" aria-label="Search">
+          <input
+            role="combobox"
+            id="tsd-search-input"
+            aria-controls="tsd-search-results"
+            aria-autocomplete="list"
+            aria-expanded="true"
+            autocapitalize="off"
+            autocomplete="off"
+            placeholder="Search the docs"
+            maxlength="100"
+          />
+          <ul role="listbox" id="tsd-search-results"></ul>
+          <div id="tsd-search-status" aria-live="polite" aria-atomic="true">
+            <div>Preparing search index...</div>
+          </div>
+        </dialog>
+        <a
+          href="#"
+          class="tsd-widget menu"
+          id="tsd-toolbar-menu-trigger"
+          data-toggle="menu"
+          aria-label="Menu"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            aria-hidden="true"
+          >
+            <use href="../assets/icons.svg#icon-menu"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <div class="container container-main">
+      <div class="col-content">
+        <div class="tsd-page-title">
+          <ul class="tsd-breadcrumb" aria-label="Breadcrumb">
+            <li>
+              <a href="" aria-current="page">Timesheet</a>
+            </li>
+          </ul>
+          <h1>Interface Timesheet</h1>
+        </div>
+        <section class="tsd-panel tsd-comment">
+          <div class="tsd-comment tsd-typography">
+            <p>The full Timesheet record</p>
+          </div>
+          <div class="tsd-comment tsd-typography"></div>
+        </section>
+        <div class="tsd-signature">
+          <span class="tsd-signature-keyword">interface</span>
+          <span class="tsd-kind-interface">Timesheet</span>
+          <span class="tsd-signature-symbol">{</span>
+          <br />
+          <a class="tsd-kind-property" href="#acct_date">acct_date</a>
+          <span class="tsd-signature-symbol">:</span>
+          <a
+            href="DateContainer.html"
+            class="tsd-signature-type tsd-kind-interface"
+            >DateContainer</a
+          >
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#approved">approved</a>
+          <span class="tsd-signature-symbol">:</span>
+          <a
+            href="DateContainer.html"
+            class="tsd-signature-type tsd-kind-interface"
+            >DateContainer</a
+          >
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#approved_by">approved_by</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#associated_tmid"
+            >associated_tmid</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#created">created</a>
+          <span class="tsd-signature-symbol">:</span>
+          <a
+            href="DateContainer.html"
+            class="tsd-signature-type tsd-kind-interface"
+            >DateContainer</a
+          >
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#default_categoryid"
+            >default_categoryid</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#default_customerid"
+            >default_customerid</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#default_payrolltypeid"
+            >default_payrolltypeid</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#default_per_row"
+            >default_per_row</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#default_projectid"
+            >default_projectid</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#default_projecttaskid"
+            >default_projecttaskid</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#default_timetypeid"
+            >default_timetypeid</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#duration">duration</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#ends">ends</a>
+          <span class="tsd-signature-symbol">:</span>
+          <a
+            href="DateContainer.html"
+            class="tsd-signature-type tsd-kind-interface"
+            >DateContainer</a
+          >
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#history">history</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#id">id</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">number</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#max_hours">max_hours</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#min_hours">min_hours</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#name">name</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#notes">notes</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#start_end_month_ts"
+            >start_end_month_ts</a
+          >
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#starts">starts</a>
+          <span class="tsd-signature-symbol">:</span>
+          <a
+            href="DateContainer.html"
+            class="tsd-signature-type tsd-kind-interface"
+            >DateContainer</a
+          >
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#status">status</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#submitted">submitted</a>
+          <span class="tsd-signature-symbol">:</span>
+          <a
+            href="DateContainer.html"
+            class="tsd-signature-type tsd-kind-interface"
+            >DateContainer</a
+          >
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#thin_client_id">thin_client_id</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">string</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#total">total</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">number</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#updated">updated</a>
+          <span class="tsd-signature-symbol">:</span>
+          <a
+            href="DateContainer.html"
+            class="tsd-signature-type tsd-kind-interface"
+            >DateContainer</a
+          >
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <a class="tsd-kind-property" href="#userid">userid</a>
+          <span class="tsd-signature-symbol">:</span>
+          <span class="tsd-signature-type">number</span>
+          <span class="tsd-signature-symbol">;</span>
+          <br />
+          <span class="tsd-signature-symbol">}</span>
+        </div>
+        <aside class="tsd-sources">
+          <ul>
+            <li>
+              Defined in
+              <a
+                href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-15"
+                >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:15</a
+              >
+            </li>
+          </ul>
+        </aside>
+        <section class="tsd-panel-group tsd-index-group">
+          <section class="tsd-panel tsd-index-panel">
+            <details class="tsd-index-content tsd-accordion" open>
+              <summary class="tsd-accordion-summary tsd-index-summary">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <use href="../assets/icons.svg#icon-chevronDown"></use>
+                </svg>
+                <h5 class="tsd-index-heading uppercase">Index</h5>
+              </summary>
+              <div class="tsd-accordion-details">
+                <section class="tsd-index-section">
+                  <h3 class="tsd-index-heading">Properties</h3>
+                  <div class="tsd-index-list">
+                    <a href="#acct_date" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>acct_ <wbr />date </span>
+                    </a>
+                    <a href="#approved" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>approved</span>
+                    </a>
+                    <a href="#approved_by" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>approved_ <wbr />by </span>
+                    </a>
+                    <a href="#associated_tmid" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>associated_ <wbr />tmid </span>
+                    </a>
+                    <a href="#created" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>created</span>
+                    </a>
+                    <a href="#default_categoryid" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>default_ <wbr />categoryid </span>
+                    </a>
+                    <a href="#default_customerid" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>default_ <wbr />customerid </span>
+                    </a>
+                    <a href="#default_payrolltypeid" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>default_ <wbr />payrolltypeid </span>
+                    </a>
+                    <a href="#default_per_row" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>default_ <wbr />per_ <wbr />row </span>
+                    </a>
+                    <a href="#default_projectid" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>default_ <wbr />projectid </span>
+                    </a>
+                    <a href="#default_projecttaskid" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>default_ <wbr />projecttaskid </span>
+                    </a>
+                    <a href="#default_timetypeid" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>default_ <wbr />timetypeid </span>
+                    </a>
+                    <a href="#duration" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>duration</span>
+                    </a>
+                    <a href="#ends" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>ends</span>
+                    </a>
+                    <a href="#history" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>history</span>
+                    </a>
+                    <a href="#id" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>id</span>
+                    </a>
+                    <a href="#max_hours" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>max_ <wbr />hours </span>
+                    </a>
+                    <a href="#min_hours" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>min_ <wbr />hours </span>
+                    </a>
+                    <a href="#name" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>name</span>
+                    </a>
+                    <a href="#notes" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>notes</span>
+                    </a>
+                    <a href="#start_end_month_ts" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>start_ <wbr />end_ <wbr />month_ <wbr />ts </span>
+                    </a>
+                    <a href="#starts" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>starts</span>
+                    </a>
+                    <a href="#status" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>status</span>
+                    </a>
+                    <a href="#submitted" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>submitted</span>
+                    </a>
+                    <a href="#thin_client_id" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>thin_ <wbr />client_ <wbr />id </span>
+                    </a>
+                    <a href="#total" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>total</span>
+                    </a>
+                    <a href="#updated" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>updated</span>
+                    </a>
+                    <a href="#userid" class="tsd-index-link">
+                      <svg
+                        class="tsd-kind-icon"
+                        viewBox="0 0 24 24"
+                        aria-label="Property"
+                      >
+                        <use href="../assets/icons.svg#icon-1024"></use>
+                      </svg>
+                      <span>userid</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </details>
+          </section>
+        </section>
+        <details class="tsd-panel-group tsd-member-group tsd-accordion" open>
+          <summary class="tsd-accordion-summary" data-key="section-Properties">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <use href="../assets/icons.svg#icon-chevronDown"></use>
+            </svg>
+            <h2>Properties</h2>
+          </summary>
+          <section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="acct_date">
+                <span>acct_ <wbr />date </span>
+                <a
+                  href="#acct_date"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">acct_date</span>
+                <span class="tsd-signature-symbol">:</span>
+                <a
+                  href="DateContainer.html"
+                  class="tsd-signature-type tsd-kind-interface"
+                  >DateContainer</a
+                >
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-29"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:29</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="approved">
+                <span>approved</span>
+                <a
+                  href="#approved"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">approved</span>
+                <span class="tsd-signature-symbol">:</span>
+                <a
+                  href="DateContainer.html"
+                  class="tsd-signature-type tsd-kind-interface"
+                  >DateContainer</a
+                >
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-37"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:37</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="approved_by">
+                <span>approved_ <wbr />by </span>
+                <a
+                  href="#approved_by"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">approved_by</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-30"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:30</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="associated_tmid">
+                <span>associated_ <wbr />tmid </span>
+                <a
+                  href="#associated_tmid"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">associated_tmid</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-23"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:23</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="created">
+                <span>created</span>
+                <a
+                  href="#created"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">created</span>
+                <span class="tsd-signature-symbol">:</span>
+                <a
+                  href="DateContainer.html"
+                  class="tsd-signature-type tsd-kind-interface"
+                  >DateContainer</a
+                >
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-35"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:35</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="default_categoryid">
+                <span>default_ <wbr />categoryid </span>
+                <a
+                  href="#default_categoryid"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">default_categoryid</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-34"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:34</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="default_customerid">
+                <span>default_ <wbr />customerid </span>
+                <a
+                  href="#default_customerid"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">default_customerid</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-28"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:28</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="default_payrolltypeid">
+                <span>default_ <wbr />payrolltypeid </span>
+                <a
+                  href="#default_payrolltypeid"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">default_payrolltypeid</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-18"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:18</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="default_per_row">
+                <span>default_ <wbr />per_ <wbr />row </span>
+                <a
+                  href="#default_per_row"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">default_per_row</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-43"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:43</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="default_projectid">
+                <span>default_ <wbr />projectid </span>
+                <a
+                  href="#default_projectid"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">default_projectid</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-41"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:41</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="default_projecttaskid">
+                <span>default_ <wbr />projecttaskid </span>
+                <a
+                  href="#default_projecttaskid"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">default_projecttaskid</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-38"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:38</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="default_timetypeid">
+                <span>default_ <wbr />timetypeid </span>
+                <a
+                  href="#default_timetypeid"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">default_timetypeid</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-25"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:25</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="duration">
+                <span>duration</span>
+                <a
+                  href="#duration"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">duration</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-31"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:31</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="ends">
+                <span>ends</span>
+                <a href="#ends" aria-label="Permalink" class="tsd-anchor-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">ends</span>
+                <span class="tsd-signature-symbol">:</span>
+                <a
+                  href="DateContainer.html"
+                  class="tsd-signature-type tsd-kind-interface"
+                  >DateContainer</a
+                >
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-32"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:32</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="history">
+                <span>history</span>
+                <a
+                  href="#history"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">history</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-24"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:24</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="id">
+                <span>id</span>
+                <a href="#id" aria-label="Permalink" class="tsd-anchor-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">id</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-20"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:20</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="max_hours">
+                <span>max_ <wbr />hours </span>
+                <a
+                  href="#max_hours"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">max_hours</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-21"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:21</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="min_hours">
+                <span>min_ <wbr />hours </span>
+                <a
+                  href="#min_hours"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">min_hours</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-42"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:42</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="name">
+                <span>name</span>
+                <a href="#name" aria-label="Permalink" class="tsd-anchor-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">name</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-27"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:27</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="notes">
+                <span>notes</span>
+                <a href="#notes" aria-label="Permalink" class="tsd-anchor-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">notes</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-39"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:39</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="start_end_month_ts">
+                <span>start_ <wbr />end_ <wbr />month_ <wbr />ts </span>
+                <a
+                  href="#start_end_month_ts"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">start_end_month_ts</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-40"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:40</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="starts">
+                <span>starts</span>
+                <a
+                  href="#starts"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">starts</span>
+                <span class="tsd-signature-symbol">:</span>
+                <a
+                  href="DateContainer.html"
+                  class="tsd-signature-type tsd-kind-interface"
+                  >DateContainer</a
+                >
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-36"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:36</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="status">
+                <span>status</span>
+                <a
+                  href="#status"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">status</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-16"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:16</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="submitted">
+                <span>submitted</span>
+                <a
+                  href="#submitted"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">submitted</span>
+                <span class="tsd-signature-symbol">:</span>
+                <a
+                  href="DateContainer.html"
+                  class="tsd-signature-type tsd-kind-interface"
+                  >DateContainer</a
+                >
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-26"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:26</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="thin_client_id">
+                <span>thin_ <wbr />client_ <wbr />id </span>
+                <a
+                  href="#thin_client_id"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">thin_client_id</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-22"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:22</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="total">
+                <span>total</span>
+                <a href="#total" aria-label="Permalink" class="tsd-anchor-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">total</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-33"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:33</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="updated">
+                <span>updated</span>
+                <a
+                  href="#updated"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">updated</span>
+                <span class="tsd-signature-symbol">:</span>
+                <a
+                  href="DateContainer.html"
+                  class="tsd-signature-type tsd-kind-interface"
+                  >DateContainer</a
+                >
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-19"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:19</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section class="tsd-panel tsd-member">
+              <h3 class="tsd-anchor-link" id="userid">
+                <span>userid</span>
+                <a
+                  href="#userid"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <use href="../assets/icons.svg#icon-anchor"></use>
+                  </svg>
+                </a>
+              </h3>
+              <div class="tsd-signature">
+                <span class="tsd-kind-property">userid</span>
+                <span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/types/Timesheet.ts#lines-17"
+                      >Documents/code2/interns-oaconnect/src/types/Timesheet.ts:17</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+          </section>
+        </details>
+        <section class="tsd-panel tsd-comment">
+          <div class="tsd-comment tsd-typography">
+            <h3>Usage and Operations</h3>
+            <p>
+              A <strong>Timesheet</strong> is a collection of time entries
+              submitted by an employee to claim compensation for time worked.
+            </p>
+            <h4>Listing Timesheets:</h4>
+            <ul>
+              <li>
+                Use <code>list()</code> or <code>batchList()</code> on
+                <code>SPPClient</code> to retrieve one or more
+                <strong>Timesheet</strong> records.
+              </li>
+            </ul>
+            <h4>Creating Timesheets:</h4>
+            <ul>
+              <li>
+                Use <code>add()</code> to create a new
+                <strong>Timesheet</strong> record.
+              </li>
+              <li>
+                <strong>Permissions:</strong> Only administrators or users with
+                Timesheet creation rights can add timesheets for others; all
+                users can create their own.
+              </li>
+            </ul>
+            <h4>Updating Timesheets:</h4>
+            <ul>
+              <li>
+                Use <code>update()</code> to modify Timesheet fields, such as
+                status or notes.
+              </li>
+              <li>
+                <strong>Conditions:</strong> Submitted or approved timesheets
+                may be locked; see account settings.
+              </li>
+            </ul>
+            <h4>Submission & Approval:</h4>
+            <ul>
+              <li>
+                Use <code>submit()</code> to submit a Timesheet for approval.
+              </li>
+              <li>
+                Use <code>approve()</code>, <code>reject()</code>, or
+                <code>unapprove()</code> as appropriate.
+              </li>
+            </ul>
+            <h4>Deleting Timesheets:</h4>
+            <ul>
+              <li>Use <code>delete()</code> to remove a Timesheet record.</li>
+              <li>
+                <strong>Important:</strong> Delete any dependent time entry
+                records before deleting a Timesheet to avoid referential
+                constraints.
+              </li>
+            </ul>
+            <p>
+              <strong>Related Types:</strong>
+              <a href="DateContainer.html">DateContainer</a> for date fields;
+              <a href="TimesheetEntry.html">TimesheetEntry</a> for individual
+              entries; <a href="TimesheetRules.html">TimesheetRules</a> for
+              business rules.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sidebar">
+        <div class="page-menu">
+          <div class="tsd-navigation settings">
+            <details class="tsd-accordion">
+              <summary class="tsd-accordion-summary">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <use href="../assets/icons.svg#icon-chevronDown"></use>
+                </svg>
+                <h3>Settings</h3>
+              </summary>
+              <div class="tsd-accordion-details">
+                <div class="tsd-filter-visibility">
+                  <span class="settings-label">Member Visibility</span>
+                  <ul id="tsd-filter-options">
+                    <li class="tsd-filter-item">
+                      <label class="tsd-filter-input">
+                        <input
+                          type="checkbox"
+                          id="tsd-filter-protected"
+                          name="protected"
+                        />
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          aria-hidden="true"
+                        >
+                          <rect
+                            class="tsd-checkbox-background"
+                            width="30"
+                            height="30"
+                            x="1"
+                            y="1"
+                            rx="6"
+                            fill="none"
+                          ></rect>
+                          <path
+                            class="tsd-checkbox-checkmark"
+                            d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                            stroke="none"
+                            stroke-width="3.5"
+                            stroke-linejoin="round"
+                            fill="none"
+                          ></path>
+                        </svg>
+                        <span>Protected</span>
+                      </label>
+                    </li>
+                    <li class="tsd-filter-item">
+                      <label class="tsd-filter-input">
+                        <input
+                          type="checkbox"
+                          id="tsd-filter-inherited"
+                          name="inherited"
+                          checked
+                        />
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          aria-hidden="true"
+                        >
+                          <rect
+                            class="tsd-checkbox-background"
+                            width="30"
+                            height="30"
+                            x="1"
+                            y="1"
+                            rx="6"
+                            fill="none"
+                          ></rect>
+                          <path
+                            class="tsd-checkbox-checkmark"
+                            d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                            stroke="none"
+                            stroke-width="3.5"
+                            stroke-linejoin="round"
+                            fill="none"
+                          ></path>
+                        </svg>
+                        <span>Inherited</span>
+                      </label>
+                    </li>
+                    <li class="tsd-filter-item">
+                      <label class="tsd-filter-input">
+                        <input
+                          type="checkbox"
+                          id="tsd-filter-external"
+                          name="external"
+                        />
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          aria-hidden="true"
+                        >
+                          <rect
+                            class="tsd-checkbox-background"
+                            width="30"
+                            height="30"
+                            x="1"
+                            y="1"
+                            rx="6"
+                            fill="none"
+                          ></rect>
+                          <path
+                            class="tsd-checkbox-checkmark"
+                            d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                            stroke="none"
+                            stroke-width="3.5"
+                            stroke-linejoin="round"
+                            fill="none"
+                          ></path>
+                        </svg>
+                        <span>External</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tsd-theme-toggle">
+                  <label class="settings-label" for="tsd-theme">Theme</label>
+                  <select id="tsd-theme">
+                    <option value="os">OS</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                  </select>
+                </div>
+              </div>
+            </details>
+          </div>
+          <details open class="tsd-accordion tsd-page-navigation">
+            <summary class="tsd-accordion-summary">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <use href="../assets/icons.svg#icon-chevronDown"></use>
+              </svg>
+              <h3>On This Page</h3>
+            </summary>
+            <div class="tsd-accordion-details">
+              <details open class="tsd-accordion tsd-page-navigation-section">
+                <summary
+                  class="tsd-accordion-summary"
+                  data-key="section-Properties"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <use href="../assets/icons.svg#icon-chevronDown"></use></svg
+                  >Properties
+                </summary>
+                <div>
+                  <a href="#acct_date">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>acct_ <wbr />date </span>
+                  </a>
+                  <a href="#approved">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>approved</span>
+                  </a>
+                  <a href="#approved_by">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>approved_ <wbr />by </span>
+                  </a>
+                  <a href="#associated_tmid">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>associated_ <wbr />tmid </span>
+                  </a>
+                  <a href="#created">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>created</span>
+                  </a>
+                  <a href="#default_categoryid">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>default_ <wbr />categoryid </span>
+                  </a>
+                  <a href="#default_customerid">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>default_ <wbr />customerid </span>
+                  </a>
+                  <a href="#default_payrolltypeid">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>default_ <wbr />payrolltypeid </span>
+                  </a>
+                  <a href="#default_per_row">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>default_ <wbr />per_ <wbr />row </span>
+                  </a>
+                  <a href="#default_projectid">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>default_ <wbr />projectid </span>
+                  </a>
+                  <a href="#default_projecttaskid">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>default_ <wbr />projecttaskid </span>
+                  </a>
+                  <a href="#default_timetypeid">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>default_ <wbr />timetypeid </span>
+                  </a>
+                  <a href="#duration">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>duration</span>
+                  </a>
+                  <a href="#ends">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>ends</span>
+                  </a>
+                  <a href="#history">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>history</span>
+                  </a>
+                  <a href="#id">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>id</span>
+                  </a>
+                  <a href="#max_hours">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>max_ <wbr />hours </span>
+                  </a>
+                  <a href="#min_hours">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>min_ <wbr />hours </span>
+                  </a>
+                  <a href="#name">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>name</span>
+                  </a>
+                  <a href="#notes">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>notes</span>
+                  </a>
+                  <a href="#start_end_month_ts">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>start_ <wbr />end_ <wbr />month_ <wbr />ts </span>
+                  </a>
+                  <a href="#starts">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>starts</span>
+                  </a>
+                  <a href="#status">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>status</span>
+                  </a>
+                  <a href="#submitted">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>submitted</span>
+                  </a>
+                  <a href="#thin_client_id">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>thin_ <wbr />client_ <wbr />id </span>
+                  </a>
+                  <a href="#total">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>total</span>
+                  </a>
+                  <a href="#updated">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>updated</span>
+                  </a>
+                  <a href="#userid">
+                    <svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Property"
+                    >
+                      <use href="../assets/icons.svg#icon-1024"></use>
+                    </svg>
+                    <span>userid</span>
+                  </a>
+                </div>
+              </details>
+            </div>
+          </details>
+        </div>
+        <div class="site-menu">
+          <nav class="tsd-navigation">
+            <a href="../modules.html">@theredspace/spp-client</a>
+            <ul class="tsd-small-nested-navigation" id="tsd-nav-container">
+              <li>Loading...</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="tsd-generator">
+        Generated using
+        <a href="https://typedoc.org/" target="_blank">TypeDoc</a>
+      </p>
+    </footer>
+    <div class="overlay"></div>
+  </body>
+</html>
