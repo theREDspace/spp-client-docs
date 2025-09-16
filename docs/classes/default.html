@@ -144,15 +144,6 @@
                         <use href="../assets/icons.svg#icon-2048"></use></svg
                       ><span>add</span></a
                     >
-                    <a href="#batchadd" class="tsd-index-link"
-                      ><svg
-                        class="tsd-kind-icon"
-                        viewBox="0 0 24 24"
-                        aria-label="Method"
-                      >
-                        <use href="../assets/icons.svg#icon-2048"></use></svg
-                      ><span>batch<wbr />Add</span></a
-                    >
                     <a href="#batchlist" class="tsd-index-link"
                       ><svg
                         class="tsd-kind-icon"
@@ -161,15 +152,6 @@
                       >
                         <use href="../assets/icons.svg#icon-2048"></use></svg
                       ><span>batch<wbr />List</span></a
-                    >
-                    <a href="#batchupdate" class="tsd-index-link"
-                      ><svg
-                        class="tsd-kind-icon"
-                        viewBox="0 0 24 24"
-                        aria-label="Method"
-                      >
-                        <use href="../assets/icons.svg#icon-2048"></use></svg
-                      ><span>batch<wbr />Update</span></a
                     >
                     <a href="#callsppxml" class="tsd-index-link"
                       ><svg
@@ -252,6 +234,15 @@
                         <use href="../assets/icons.svg#icon-2048"></use></svg
                       ><span>whoami</span></a
                     >
+                      <a href="#createuser" class="tsd-index-link"
+                        ><svg
+                          class="tsd-kind-icon"
+                          viewBox="0 0 24 24"
+                          aria-label="Method"
+                        >
+                          <use href="../assets/icons.svg#icon-2048"></use></svg
+                        ><span>createUser</span></a
+                      >
                   </div>
                 </section>
               </div>
@@ -546,164 +537,6 @@
               </ul>
             </section>
             <section class="tsd-panel tsd-member">
-              <h3 class="tsd-anchor-link" id="batchadd">
-                <span>batch<wbr />Add</span
-                ><a
-                  href="#batchadd"
-                  aria-label="Permalink"
-                  class="tsd-anchor-icon"
-                  ><svg viewBox="0 0 24 24" aria-hidden="true">
-                    <use href="../assets/icons.svg#icon-anchor"></use></svg
-                ></a>
-              </h3>
-              <ul class="tsd-signatures">
-                <li class="">
-                  <div class="tsd-signature tsd-anchor-link" id="batchadd-1">
-                    <span class="tsd-kind-call-signature">batchAdd</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#batchaddbo"
-                      >BO</a
-                    >
-                    <span class="tsd-signature-keyword">extends</span>
-                    <span class="tsd-signature-type">BOName</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><span class="tsd-signature-symbol">(</span><br />    <span
-                      class="tsd-kind-parameter"
-                      >bo</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#batchaddbo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">,</span><br />    <span
-                      class="tsd-kind-parameter"
-                      >payloads</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-type">Partial</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      href="../types/BORecordMap.html"
-                      class="tsd-signature-type tsd-kind-type-alias"
-                      >BORecordMap</a
-                    ><span class="tsd-signature-symbol">[</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#batchaddbo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">]</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><span class="tsd-signature-symbol">[]</span
-                    ><span class="tsd-signature-symbol">,</span><br /><span
-                      class="tsd-signature-symbol"
-                      >)</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-type">Promise</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      href="../types/BORecordMap.html"
-                      class="tsd-signature-type tsd-kind-type-alias"
-                      >BORecordMap</a
-                    ><span class="tsd-signature-symbol">[</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#batchaddbo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">]</span
-                    ><span class="tsd-signature-symbol">[]</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><a
-                      href="#batchadd-1"
-                      aria-label="Permalink"
-                      class="tsd-anchor-icon"
-                      ><svg viewBox="0 0 24 24" aria-hidden="true">
-                        <use href="../assets/icons.svg#icon-anchor"></use></svg
-                    ></a>
-                  </div>
-                  <div class="tsd-description">
-                    <div class="tsd-comment tsd-typography">
-                      <p>Add multiple records for a Business Object (BO).</p>
-                    </div>
-                    <section class="tsd-panel">
-                      <h4>Type Parameters</h4>
-                      <ul class="tsd-type-parameter-list">
-                        <li>
-                          <span id="batchaddbo"
-                            ><span class="tsd-kind-type-parameter">BO</span>
-                            <span class="tsd-signature-keyword">extends</span>
-                            <span class="tsd-signature-type">BOName</span></span
-                          >
-                        </li>
-                      </ul>
-                    </section>
-                    <div class="tsd-parameters">
-                      <h4 class="tsd-parameters-title">Parameters</h4>
-                      <ul class="tsd-parameter-list">
-                        <li>
-                          <span
-                            ><span class="tsd-kind-parameter">bo</span>:
-                            <a
-                              class="tsd-signature-type tsd-kind-type-parameter"
-                              href="#batchaddbo"
-                              >BO</a
-                            ></span
-                          >
-                        </li>
-                        <li>
-                          <span
-                            ><span class="tsd-kind-parameter">payloads</span>:
-                            <span class="tsd-signature-type">Partial</span
-                            ><span class="tsd-signature-symbol">&lt;</span
-                            ><a
-                              href="../types/BORecordMap.html"
-                              class="tsd-signature-type tsd-kind-type-alias"
-                              >BORecordMap</a
-                            ><span class="tsd-signature-symbol">[</span
-                            ><a
-                              class="tsd-signature-type tsd-kind-type-parameter"
-                              href="#batchaddbo"
-                              >BO</a
-                            ><span class="tsd-signature-symbol">]</span
-                            ><span class="tsd-signature-symbol">&gt;</span
-                            ><span class="tsd-signature-symbol">[]</span></span
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <h4 class="tsd-returns-title">
-                      Returns <span class="tsd-signature-type">Promise</span
-                      ><span class="tsd-signature-symbol">&lt;</span
-                      ><a
-                        href="../types/BORecordMap.html"
-                        class="tsd-signature-type tsd-kind-type-alias"
-                        >BORecordMap</a
-                      ><span class="tsd-signature-symbol">[</span
-                      ><a
-                        class="tsd-signature-type tsd-kind-type-parameter"
-                        href="#batchaddbo"
-                        >BO</a
-                      ><span class="tsd-signature-symbol">]</span
-                      ><span class="tsd-signature-symbol">[]</span
-                      ><span class="tsd-signature-symbol">&gt;</span>
-                    </h4>
-                    <div class="tsd-comment tsd-typography"></div>
-                    <aside class="tsd-sources">
-                      <ul>
-                        <li>
-                          Defined in
-                          <a
-                            href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/SPPClient.ts#lines-296"
-                            >Documents/code2/interns-oaconnect/src/SPPClient.ts:296</a
-                          >
-                        </li>
-                      </ul>
-                    </aside>
-                  </div>
-                </li>
-              </ul>
-            </section>
-            <section class="tsd-panel tsd-member">
               <h3 class="tsd-anchor-link" id="batchlist">
                 <span>batch<wbr />List</span
                 ><a
@@ -866,180 +699,6 @@
                           <a
                             href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/SPPClient.ts#lines-255"
                             >Documents/code2/interns-oaconnect/src/SPPClient.ts:255</a
-                          >
-                        </li>
-                      </ul>
-                    </aside>
-                  </div>
-                </li>
-              </ul>
-            </section>
-            <section class="tsd-panel tsd-member">
-              <h3 class="tsd-anchor-link" id="batchupdate">
-                <span>batch<wbr />Update</span
-                ><a
-                  href="#batchupdate"
-                  aria-label="Permalink"
-                  class="tsd-anchor-icon"
-                  ><svg viewBox="0 0 24 24" aria-hidden="true">
-                    <use href="../assets/icons.svg#icon-anchor"></use></svg
-                ></a>
-              </h3>
-              <ul class="tsd-signatures">
-                <li class="">
-                  <div class="tsd-signature tsd-anchor-link" id="batchupdate-1">
-                    <span class="tsd-kind-call-signature">batchUpdate</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#batchupdatebo"
-                      >BO</a
-                    >
-                    <span class="tsd-signature-keyword">extends</span>
-                    <span class="tsd-signature-type">BOName</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><span class="tsd-signature-symbol">(</span><br />    <span
-                      class="tsd-kind-parameter"
-                      >bo</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#batchupdatebo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">,</span><br />    <span
-                      class="tsd-kind-parameter"
-                      >updates</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-symbol">{</span>
-                    <span class="tsd-kind-property">changes</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-type">Partial</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      href="../types/BORecordMap.html"
-                      class="tsd-signature-type tsd-kind-type-alias"
-                      >BORecordMap</a
-                    ><span class="tsd-signature-symbol">[</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#batchupdatebo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">]</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><span class="tsd-signature-symbol">;</span>
-                    <span class="tsd-kind-property">id</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-type">string</span>
-                    <span class="tsd-signature-symbol">}</span
-                    ><span class="tsd-signature-symbol">[]</span
-                    ><span class="tsd-signature-symbol">,</span><br /><span
-                      class="tsd-signature-symbol"
-                      >)</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-type">Promise</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      href="../types/BORecordMap.html"
-                      class="tsd-signature-type tsd-kind-type-alias"
-                      >BORecordMap</a
-                    ><span class="tsd-signature-symbol">[</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#batchupdatebo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">]</span
-                    ><span class="tsd-signature-symbol">[]</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><a
-                      href="#batchupdate-1"
-                      aria-label="Permalink"
-                      class="tsd-anchor-icon"
-                      ><svg viewBox="0 0 24 24" aria-hidden="true">
-                        <use href="../assets/icons.svg#icon-anchor"></use></svg
-                    ></a>
-                  </div>
-                  <div class="tsd-description">
-                    <div class="tsd-comment tsd-typography">
-                      <p>Update multiple records for a Business Object (BO).</p>
-                    </div>
-                    <section class="tsd-panel">
-                      <h4>Type Parameters</h4>
-                      <ul class="tsd-type-parameter-list">
-                        <li>
-                          <span id="batchupdatebo"
-                            ><span class="tsd-kind-type-parameter">BO</span>
-                            <span class="tsd-signature-keyword">extends</span>
-                            <span class="tsd-signature-type">BOName</span></span
-                          >
-                        </li>
-                      </ul>
-                    </section>
-                    <div class="tsd-parameters">
-                      <h4 class="tsd-parameters-title">Parameters</h4>
-                      <ul class="tsd-parameter-list">
-                        <li>
-                          <span
-                            ><span class="tsd-kind-parameter">bo</span>:
-                            <a
-                              class="tsd-signature-type tsd-kind-type-parameter"
-                              href="#batchupdatebo"
-                              >BO</a
-                            ></span
-                          >
-                        </li>
-                        <li>
-                          <span
-                            ><span class="tsd-kind-parameter">updates</span>:
-                            <span class="tsd-signature-symbol">{</span>
-                            <span class="tsd-kind-property">changes</span
-                            ><span class="tsd-signature-symbol">:</span>
-                            <span class="tsd-signature-type">Partial</span
-                            ><span class="tsd-signature-symbol">&lt;</span
-                            ><a
-                              href="../types/BORecordMap.html"
-                              class="tsd-signature-type tsd-kind-type-alias"
-                              >BORecordMap</a
-                            ><span class="tsd-signature-symbol">[</span
-                            ><a
-                              class="tsd-signature-type tsd-kind-type-parameter"
-                              href="#batchupdatebo"
-                              >BO</a
-                            ><span class="tsd-signature-symbol">]</span
-                            ><span class="tsd-signature-symbol">&gt;</span
-                            ><span class="tsd-signature-symbol">;</span>
-                            <span class="tsd-kind-property">id</span
-                            ><span class="tsd-signature-symbol">:</span>
-                            <span class="tsd-signature-type">string</span>
-                            <span class="tsd-signature-symbol">}</span
-                            ><span class="tsd-signature-symbol">[]</span></span
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <h4 class="tsd-returns-title">
-                      Returns <span class="tsd-signature-type">Promise</span
-                      ><span class="tsd-signature-symbol">&lt;</span
-                      ><a
-                        href="../types/BORecordMap.html"
-                        class="tsd-signature-type tsd-kind-type-alias"
-                        >BORecordMap</a
-                      ><span class="tsd-signature-symbol">[</span
-                      ><a
-                        class="tsd-signature-type tsd-kind-type-parameter"
-                        href="#batchupdatebo"
-                        >BO</a
-                      ><span class="tsd-signature-symbol">]</span
-                      ><span class="tsd-signature-symbol">[]</span
-                      ><span class="tsd-signature-symbol">&gt;</span>
-                    </h4>
-                    <div class="tsd-comment tsd-typography"></div>
-                    <aside class="tsd-sources">
-                      <ul>
-                        <li>
-                          Defined in
-                          <a
-                            href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/SPPClient.ts#lines-306"
-                            >Documents/code2/interns-oaconnect/src/SPPClient.ts:306</a
                           >
                         </li>
                       </ul>
@@ -1779,175 +1438,129 @@
               </ul>
             </section>
             <section class="tsd-panel tsd-member">
-              <h3 class="tsd-anchor-link" id="update">
-                <span>update</span
-                ><a
-                  href="#update"
-                  aria-label="Permalink"
-                  class="tsd-anchor-icon"
-                  ><svg viewBox="0 0 24 24" aria-hidden="true">
-                    <use href="../assets/icons.svg#icon-anchor"></use></svg
-                ></a>
-              </h3>
-              <ul class="tsd-signatures">
-                <li class="">
-                  <div class="tsd-signature tsd-anchor-link" id="update-1">
-                    <span class="tsd-kind-call-signature">update</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#updatebo"
-                      >BO</a
-                    >
-                    <span class="tsd-signature-keyword">extends</span>
-                    <span class="tsd-signature-type">BOName</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><span class="tsd-signature-symbol">(</span><br />    <span
-                      class="tsd-kind-parameter"
-                      >bo</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#updatebo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">,</span><br />    <span
-                      class="tsd-kind-parameter"
-                      >id</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-type">string</span
-                    ><span class="tsd-signature-symbol">,</span><br />    <span
-                      class="tsd-kind-parameter"
-                      >changes</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-type">Partial</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      href="../types/BORecordMap.html"
-                      class="tsd-signature-type tsd-kind-type-alias"
-                      >BORecordMap</a
-                    ><span class="tsd-signature-symbol">[</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#updatebo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">]</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><span class="tsd-signature-symbol">,</span><br /><span
-                      class="tsd-signature-symbol"
-                      >)</span
-                    ><span class="tsd-signature-symbol">:</span>
-                    <span class="tsd-signature-type">Promise</span
-                    ><span class="tsd-signature-symbol">&lt;</span
-                    ><a
-                      href="../types/BORecordMap.html"
-                      class="tsd-signature-type tsd-kind-type-alias"
-                      >BORecordMap</a
-                    ><span class="tsd-signature-symbol">[</span
-                    ><a
-                      class="tsd-signature-type tsd-kind-type-parameter"
-                      href="#updatebo"
-                      >BO</a
-                    ><span class="tsd-signature-symbol">]</span
-                    ><span class="tsd-signature-symbol">[]</span
-                    ><span class="tsd-signature-symbol">&gt;</span
-                    ><a
-                      href="#update-1"
-                      aria-label="Permalink"
-                      class="tsd-anchor-icon"
-                      ><svg viewBox="0 0 24 24" aria-hidden="true">
-                        <use href="../assets/icons.svg#icon-anchor"></use></svg
-                    ></a>
-                  </div>
-                  <div class="tsd-description">
-                    <section class="tsd-panel">
-                      <h4>Type Parameters</h4>
-                      <ul class="tsd-type-parameter-list">
-                        <li>
-                          <span id="updatebo"
-                            ><span class="tsd-kind-type-parameter">BO</span>
-                            <span class="tsd-signature-keyword">extends</span>
-                            <span class="tsd-signature-type">BOName</span></span
-                          >
-                        </li>
-                      </ul>
-                    </section>
-                    <div class="tsd-parameters">
-                      <h4 class="tsd-parameters-title">Parameters</h4>
-                      <ul class="tsd-parameter-list">
-                        <li>
-                          <span
-                            ><span class="tsd-kind-parameter">bo</span>:
-                            <a
-                              class="tsd-signature-type tsd-kind-type-parameter"
-                              href="#updatebo"
-                              >BO</a
-                            ></span
-                          >
-                        </li>
-                        <li>
-                          <span
-                            ><span class="tsd-kind-parameter">id</span>:
-                            <span class="tsd-signature-type">string</span></span
-                          >
-                        </li>
-                        <li>
-                          <span
-                            ><span class="tsd-kind-parameter">changes</span>:
-                            <span class="tsd-signature-type">Partial</span
-                            ><span class="tsd-signature-symbol">&lt;</span
-                            ><a
-                              href="../types/BORecordMap.html"
-                              class="tsd-signature-type tsd-kind-type-alias"
-                              >BORecordMap</a
-                            ><span class="tsd-signature-symbol">[</span
-                            ><a
-                              class="tsd-signature-type tsd-kind-type-parameter"
-                              href="#updatebo"
-                              >BO</a
-                            ><span class="tsd-signature-symbol">]</span
-                            ><span class="tsd-signature-symbol"
-                              >&gt;</span
-                            ></span
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <h4 class="tsd-returns-title">
-                      Returns <span class="tsd-signature-type">Promise</span
-                      ><span class="tsd-signature-symbol">&lt;</span
-                      ><a
-                        href="../types/BORecordMap.html"
-                        class="tsd-signature-type tsd-kind-type-alias"
-                        >BORecordMap</a
-                      ><span class="tsd-signature-symbol">[</span
-                      ><a
-                        class="tsd-signature-type tsd-kind-type-parameter"
-                        href="#updatebo"
-                        >BO</a
-                      ><span class="tsd-signature-symbol">]</span
-                      ><span class="tsd-signature-symbol">[]</span
-                      ><span class="tsd-signature-symbol">&gt;</span>
-                    </h4>
-                    <aside class="tsd-sources">
-                      <ul>
-                        <li>
-                          Defined in
-                          <a
-                            href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/SPPClient.ts#lines-278"
-                            >Documents/code2/interns-oaconnect/src/SPPClient.ts:278</a
-                          >
-                        </li>
-                      </ul>
-                    </aside>
-                  </div>
-                </li>
-              </ul>
-            </section>
+  <h3 class="tsd-anchor-link" id="update">
+    <span>update</span
+    ><a href="#update" aria-label="Permalink" class="tsd-anchor-icon"
+      ><svg viewBox="0 0 24 24">
+        <use href="../assets/icons.svg#icon-anchor"></use></svg
+    ></a>
+  </h3>
+  <ul class="tsd-signatures">
+    <li class="">
+      <div class="tsd-signature tsd-anchor-link" id="update-1">
+        <span class="tsd-kind-call-signature">update</span>
+        <span class="tsd-signature-symbol">&lt;</span>
+        <span class="tsd-signature-type">BO extends BOName</span>
+        <span class="tsd-signature-symbol">&gt;</span>
+        <span class="tsd-signature-symbol">(</span>
+        <span class="tsd-kind-parameter">bo</span>
+        <span class="tsd-signature-symbol">:</span>
+        <span class="tsd-signature-type">BO</span>,
+        <span class="tsd-kind-parameter">idOrUpdates</span>
+        <span class="tsd-signature-symbol">:</span>
+        <span class="tsd-signature-type">string | { id: string; changes: Partial&lt;BORecordMap[BO]&gt; }[]</span>,
+        <span class="tsd-kind-parameter">changes?</span>
+        <span class="tsd-signature-symbol">:</span>
+        <span class="tsd-signature-type">Partial&lt;BORecordMap[BO]&gt;</span>
+        <span class="tsd-signature-symbol">)</span>
+        <span class="tsd-signature-symbol">:</span>
+        <span class="tsd-signature-type">Promise&lt;BORecordMap[BO] | BORecordMap[BO][]&gt;</span>
+        <a href="#update-1" aria-label="Permalink" class="tsd-anchor-icon">
+          <svg viewBox="0 0 24 24">
+            <use href="../assets/icons.svg#icon-anchor"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="tsd-description">
+        <div class="tsd-comment tsd-typography">
+          <p>
+            <strong>Update one or more records for any Business Object (BO).</strong><br>
+            Use this method to update a single record or batch update multiple records by passing an array of update objects.<br>
+            <strong>Note:</strong> There is no <code>batchUpdate</code> method; use <code>update()</code> for batch operations.
+          </p>
+          <h4>Example Usage: Single Update</h4>
+          <pre><code class="language-ts">
+await client.update("User", "122", { 
+  nickname: "sam@notred.com", 
+  phone: "555-1234" 
+});
+          </code></pre>
+          <h4>Example Usage: Batch Update</h4>
+          <pre><code class="language-ts">
+const batchUpdateParams = [
+  {
+    id: "122",
+    changes: { 
+      nickname: "sam@notred.com",
+      phone: "555-1234"
+    }
+  },
+  {
+    id: "389", 
+    changes: { 
+      user_jira_id__c: "JIRA-002" 
+    }
+  },
+  {
+    id: "378",
+    changes: { 
+      name: "Jane Taco",
+      active: true,
+      department: "Engineering"
+    }
+  },
+  {
+    id: "111",
+    changes: { 
+      user_jira_id__c: "JIRA-003",
+      email: "john.smith@company.com",
+      phone: "555-9876"
+    }
+  }
+];
+await client.update("User", batchUpdateParams);
+          </code></pre>
+          <ul>
+            <li>Returns updated record(s) as <code>User</code> objects.</li>
+            <li>Supports both single and batch updates.</li>
+          </ul>
+        </div>
+        <div class="tsd-parameters">
+          <h4 class="tsd-parameters-title">Parameters</h4>
+          <ul class="tsd-parameter-list">
+            <li>
+              <span><span class="tsd-kind-parameter">bo</span>: <span class="tsd-signature-type">BOName</span></span>
+            </li>
+            <li>
+              <span><span class="tsd-kind-parameter">idOrUpdates</span>: <span class="tsd-signature-type">string | { id: string; changes: Partial&lt;BORecordMap[BO]&gt; }[]</span></span>
+            </li>
+            <li>
+              <span><span class="tsd-kind-parameter">changes?</span>: <span class="tsd-signature-type">Partial&lt;BORecordMap[BO]&gt;</span></span>
+            </li>
+          </ul>
+        </div>
+        <h4 class="tsd-returns-title">
+          Returns <span class="tsd-signature-type">Promise&lt;BORecordMap[BO] | BORecordMap[BO][]&gt;</span>
+        </h4>
+        <aside class="tsd-sources">
+          <ul>
+            <li>
+              Defined in
+              <a href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/SPPClient.ts#lines-313">
+                Documents/code2/interns-oaconnect/src/SPPClient.ts:313
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </li>
+  </ul>
+</section>
             <section class="tsd-panel tsd-member">
               <h3 class="tsd-anchor-link" id="whoami">
                 <span>whoami</span
                 ><a
-                  href="#whoami"
+                  href="#createuser"
                   aria-label="Permalink"
                   class="tsd-anchor-icon"
                   ><svg viewBox="0 0 24 24" aria-hidden="true">
@@ -2001,6 +1614,110 @@
               </ul>
             </section>
           </section>
+          <!-- EDIT HERE -->
+<section class="tsd-panel tsd-member">
+  <h3 class="tsd-anchor-link" id="createuser">
+    <span>createUser</span
+    ><a href="#createuser" aria-label="Permalink" class="tsd-anchor-icon"
+      ><svg viewBox="0 0 24 24">
+        <use href="../assets/icons.svg#icon-anchor"></use></svg
+    ></a>
+  </h3>
+  <ul class="tsd-signatures">
+    <li class="">
+      <div class="tsd-signature tsd-anchor-link" id="createuser-1">
+        <span class="tsd-kind-call-signature">createUser</span>
+        <span class="tsd-signature-symbol">(</span>
+        <span class="tsd-kind-parameter">user</span>
+        <span class="tsd-signature-symbol">:</span>
+        <span class="tsd-signature-type">Partial&lt;<a href="../interfaces/User.html" class="tsd-signature-type tsd-kind-interface">User</a>&gt;</span>,
+        <span class="tsd-kind-parameter">company</span>
+        <span class="tsd-signature-symbol">:</span>
+        <span class="tsd-signature-type">Partial&lt;<a href="../interfaces/Company.html" class="tsd-signature-type tsd-kind-interface">Company</a>&gt;</span>,
+        <span class="tsd-kind-parameter">options?</span>
+        <span class="tsd-signature-symbol">:</span>
+        <span class="tsd-signature-type"><a href="../interfaces/CreateUserOptions.html" class="tsd-signature-type tsd-kind-interface">CreateUserOptions</a></span>
+        <span class="tsd-signature-symbol">)</span>
+        <span class="tsd-signature-symbol">:</span>
+        <span class="tsd-signature-type">Promise&lt;<a href="../interfaces/User.html" class="tsd-signature-type tsd-kind-interface">User</a>&gt;</span>
+        <a href="#createuser-1" aria-label="Permalink" class="tsd-anchor-icon">
+          <svg viewBox="0 0 24 24">
+            <use href="../assets/icons.svg#icon-anchor"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="tsd-description">
+        <div class="tsd-comment tsd-typography">
+          <p>
+            <strong>Create a new user in OpenAir.</strong><br>
+            This method creates a user and associated company record. It returns the created <code>User</code> object.<br>
+            <strong>Note:</strong> OpenAir may override the email address for new users (e.g. <code>OA-ChangeMe@netsuite.com</code>).
+          </p>
+          <h4>Example Usage</h4>
+          <pre><code class="language-ts">
+import SPPClient from '@theredspace/spp-client';
+
+const client = new SPPClient({
+  sppUrl: "https://your-instance.com",
+  clientId: "your-client-id",
+  clientSecret: "your-client-secret",
+  accessToken: "your-access-token",
+  callbackUrl: "https://your-app.com/callback"
+});
+
+const userData = {
+  email: "john.doe@example.com",
+  first_name: "John",
+  last_name: "Doe",
+  active: 1
+};
+
+const companyData = {
+  name: "Acme Corp",
+  nickname: "Acme"
+};
+
+const result = await client.createUser(userData, companyData);
+console.log('Created user:', result.id, result.nickname); 
+          </code></pre>
+          <h4>OpenAir Behavior</h4>
+          <ul>
+            <li>Email may be changed by OpenAir for security.</li>
+            <li>New users may have dependencies that prevent deletion; use <code>active: 0</code> to deactivate.</li>
+          </ul>
+        </div>
+        <div class="tsd-parameters">
+          <h4 class="tsd-parameters-title">Parameters</h4>
+          <ul class="tsd-parameter-list">
+            <li>
+              <span><span class="tsd-kind-parameter">user</span>: <span class="tsd-signature-type">Partial&lt;User&gt;</span></span>
+            </li>
+            <li>
+              <span><span class="tsd-kind-parameter">company</span>: <span class="tsd-signature-type">Partial&lt;Company&gt;</span></span>
+            </li>
+            <li>
+              <span><span class="tsd-kind-parameter">options?</span>: <span class="tsd-signature-type">CreateUserOptions</span></span>
+            </li>
+          </ul>
+        </div>
+        <h4 class="tsd-returns-title">
+          Returns <span class="tsd-signature-type">Promise&lt;User&gt;</span>
+        </h4>
+        <aside class="tsd-sources">
+          <ul>
+            <li>
+              Defined in
+              <a href="https://bitbucket.org/theredspace/interns-oaconnect/src/3885ae38f83d01e70c1a924a3c00c50d436d3e77/src/SPPClient.ts#lines-329">
+                Documents/code2/interns-oaconnect/src/SPPClient.ts:329
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </li>
+  </ul>
+</section>
+            <!-- Stop EDITS HERE -->
         </details>
       </div>
       <div class="col-sidebar">
@@ -2198,14 +1915,6 @@
                     >
                       <use href="../assets/icons.svg#icon-2048"></use></svg
                     ><span>add</span></a
-                  ><a href="#batchadd"
-                    ><svg
-                      class="tsd-kind-icon"
-                      viewBox="0 0 24 24"
-                      aria-label="Method"
-                    >
-                      <use href="../assets/icons.svg#icon-2048"></use></svg
-                    ><span>batch<wbr />Add</span></a
                   ><a href="#batchlist"
                     ><svg
                       class="tsd-kind-icon"
@@ -2214,15 +1923,8 @@
                     >
                       <use href="../assets/icons.svg#icon-2048"></use></svg
                     ><span>batch<wbr />List</span></a
-                  ><a href="#batchupdate"
-                    ><svg
-                      class="tsd-kind-icon"
-                      viewBox="0 0 24 24"
-                      aria-label="Method"
-                    >
-                      <use href="../assets/icons.svg#icon-2048"></use></svg
-                    ><span>batch<wbr />Update</span></a
-                  ><a href="#callsppxml"
+                  >
+                  <a href="#callsppxml"
                     ><svg
                       class="tsd-kind-icon"
                       viewBox="0 0 24 24"
@@ -2295,6 +1997,25 @@
                       <use href="../assets/icons.svg#icon-2048"></use></svg
                     ><span>whoami</span></a
                   >
+                  <a href="#whoami"
+                    ><svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Method"
+                    >
+                      <use href="../assets/icons.svg#icon-2048"></use></svg
+                    ><span>whoami</span></a
+                  >                  
+                  <a href="#createuser"
+                    ><svg
+                      class="tsd-kind-icon"
+                      viewBox="0 0 24 24"
+                      aria-label="Method"
+                    >
+                      <use href="../assets/icons.svg#icon-2048"></use></svg
+                    ><span>createUser</span></a
+                  >
+
                 </div>
               </details>
             </div>
